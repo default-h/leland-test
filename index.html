@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <title>Profile | Leland Management</title>
+    <link rel="icon" type="image/x-icon" href="./assets/Leland-Icon.png" />
+    <meta name="description"
+        content="Leland Management has proudly served condominiums and HOAs in Florida since 1998. Trust in a community association management company that’s got your back." />
+</head>
+
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-xl navbar-light center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
+                aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" align="center">
+                <img src="./assets/img/Leland-Header.png" width="105" alt="Leland management lifestyle" />
+            </a>
+            <div>
+                <i class="bi bi-bell-fill icon"></i>
+
+                <i class="bi bi-person-circle icon"></i>
+            </div>
+            <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li>
+                        <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Guidelines</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Admin</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main class="container">
+        <h2 class="form__title">Profile</h2>
+        <div class="row">
+            <div class="col">
+                <legend>Account Name</legend>
+                <p>The Hogwarts Slitherin Trust</p>
+            </div>
+            <div class="col">
+                <legend>Property Address</legend>
+                <address>King's Cross Station Platform 9 3/4 <br />London, UK</address>
+            </div>
+        </div>
+
+
+
+        <form>
+            <div class="row">
+                <legend>Display Name</legend>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control form-control-lg" id="firstName" name="firstName">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control form-control-lg" id="lastName" name="lastName">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <legend>Contact Information</legend>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="emailAddress">Email Address</label>
+                        <input type="email" class="form-control form-control-lg" id="emailAddress" name="emailAddress">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" class="form-control form-control-lg" id="phoneNumber" name="phoneNumber">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <legend>Notification Settings</legend>
+                <p>By default, the system will send you email notification when there is an activity or decisions made
+                    regarding your application. If you no longer wish to receive email notification, you may opt out
+                    below.</p>
+                <div class="form-group">
+                    <div class="col">
+                        <input type="checkbox" id="notify" name="notify">
+                        <label for="notify">Notify me of any activity or decision regarding my application</label>
+                    </div>
+                    <div class="col">
+                        <input type="checkbox" id="doNotNotify" name="doNotNotify">
+                        <label for="notify">I <strong>DO NOT</strong> want to be notified of any activity or decision
+                            regarding my application</label>
+                    </div>
+                </div>
+            </div>
+            <input class="btn btn-default" type="submit" value="Save">
+            </input>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="./assets/img/Leland-Footer.png" alt="" class="footer__image" />
+                </div>
+                <div class="col">
+                    <h3 class="footer__title">About</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#">Leland Management</a></li>
+                        <li class="footer__item"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3 class="footer__title">Need Help?</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#">FAQ's</a></li>
+                        <li class="footer__item"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#">Back to website</a></li>
+                        <li class="footer__item"><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p><i class="bi bi-c-circle"></i> 2022 Leland Management ARB</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
