@@ -26,7 +26,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a href="#" align="center">
-                <img src="./assets/img/Leland-Header.png" width="105" alt="Leland management lifestyle" />
+                <img src="./assets/img/Leland-Header.png" width="110" alt="Leland management lifestyle" />
             </a>
             <div>
                 <i class="bi bi-bell-fill icon"></i>
@@ -53,12 +53,13 @@
         <h2 class="form__title">Profile</h2>
         <div class="row">
             <div class="col">
-                <legend>Account Name</legend>
-                <p>The Hogwarts Slitherin Trust</p>
+                <legend class="profile__header">Account Name</legend>
+                <p class="profile__paragraph">The Hogwarts Slitherin Trust</p>
             </div>
             <div class="col">
-                <legend>Property Address</legend>
-                <address>King's Cross Station Platform 9 3/4 <br />London, UK</address>
+                <legend class="profile__header">Property Address</legend>
+                <address class="address profile__paragraph">King's Cross Station Platform 9 3/4 <br />London, UK
+                </address>
             </div>
         </div>
 
@@ -66,47 +67,48 @@
 
         <form>
             <div class="row">
-                <legend>Display Name</legend>
+                <legend class="form__display">Display Name</legend>
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="firstName">First Name</label>
+                        <label class="form__label" for="firstName">First Name</label>
                         <input type="text" class="form-control form-control-lg" id="firstName" name="firstName">
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="lastName">Last Name</label>
+                        <label class="form__label" for="lastName">Last Name</label>
                         <input type="text" class="form-control form-control-lg" id="lastName" name="lastName">
                     </div>
                 </div>
             </div>
             <div class="row">
-                <legend>Contact Information</legend>
+                <legend class="form__contact">Contact Information</legend>
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="emailAddress">Email Address</label>
+                        <label class="form__label" for="emailAddress">Email Address</label>
                         <input type="email" class="form-control form-control-lg" id="emailAddress" name="emailAddress">
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="phoneNumber">Phone Number</label>
+                        <label class="form__label" for="phoneNumber">Phone Number</label>
                         <input type="tel" class="form-control form-control-lg" id="phoneNumber" name="phoneNumber">
                     </div>
                 </div>
             </div>
             <div class="row">
-                <legend>Notification Settings</legend>
-                <p>By default, the system will send you email notification when there is an activity or decisions made
+                <legend class="form__notification">Notification Settings</legend>
+                <p class="form__paragraph">By default, the system will send you email notification when there is an
+                    activity or decisions made
                     regarding your application. If you no longer wish to receive email notification, you may opt out
                     below.</p>
                 <div class="form-group">
                     <div class="col">
-                        <input type="checkbox" id="notify" name="notify">
+                        <input class="checkbox" type="checkbox" id="notify" name="notify">
                         <label for="notify">Notify me of any activity or decision regarding my application</label>
                     </div>
                     <div class="col">
-                        <input type="checkbox" id="doNotNotify" name="doNotNotify">
+                        <input class="checkbox" type="checkbox" id="doNotNotify" name="doNotNotify">
                         <label for="notify">I <strong>DO NOT</strong> want to be notified of any activity or decision
                             regarding my application</label>
                     </div>

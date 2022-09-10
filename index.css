@@ -30,6 +30,9 @@ input.form-control-lg {
   font-size: 15px;
   min-width: none;
   min-height: none;
+  margin-top: 12px;
+  height: 45px;
+  min-height: unset;
 }
 
 input.form-control-lg:focus {
@@ -37,11 +40,11 @@ input.form-control-lg:focus {
 }
 
 .form-group {
-  margin-bottom: 25px;
 }
 
 .form__title {
   font-family: 'Roboto Slab', serif;
+  font-size: 24px;
 }
 
 .icon {
@@ -83,6 +86,7 @@ input.form-control-lg:focus {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
   padding: 6px 70.75px;
+  margin-top: 40px;
 }
 
 .btn.btn-default:active,
@@ -105,11 +109,10 @@ button.navbar-toggler:active {
 
 header.container-fluid {
   border-bottom: 1px solid #dde0e3;
-  padding: 4px 34px;
+  padding: 7px 34px;
 }
 
 input.form-control {
-  margin: 15px 0;
 }
 
 ul.navbar-nav {
@@ -131,6 +134,54 @@ ul.navbar-nav {
 
 main.container,
 div.container {
-  width: 70%;
-  padding: 50px;
+  width: 68%;
+  padding: 38px;
+}
+
+legend.form__contact,
+legend.form__display,
+legend.form__notification {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+legend.form__display {
+  margin-top: 12px;
+}
+
+legend.form__contact {
+  margin-top: 31px;
+}
+
+legend.form__notification {
+  margin-top: 48px;
+}
+
+.profile__header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.form__label,
+.profile__paragraph,
+.form__paragraph {
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+.form__label {
+  margin-top: 3px;
+}
+
+.profile__paragraph {
+  padding-top: 3px;
+}
+
+.checkbox {
+  margin-top: 24px;
 }
