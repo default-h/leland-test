@@ -100,6 +100,8 @@ button.navbar-toggler:active {
 
 .navbar-nav {
   gap: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 .btn.btn-default,
@@ -146,7 +148,7 @@ input.form-control-lg {
   margin-top: 12px;
   height: 45px;
   min-height: unset;
-  width: 98%;
+  width: 100%;
 }
 
 input.form-control-lg:focus {
