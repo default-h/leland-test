@@ -102,14 +102,14 @@
                     <div class="form-group">
                         <label class="form__label" for="emailAddress">Email Address</label>
                         <input type="email" class="form-control form-control-lg" id="emailAddress" name="emailAddress">
-
+                        <small></small>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="form-group">
                         <label class="form__label" for="phoneNumber">Phone Number</label>
                         <input type="tel" class="form-control form-control-lg" id="phoneNumber" name="phoneNumber">
-
+                        <small></small>
                     </div>
                 </div>
             </div>
@@ -119,14 +119,17 @@
                     activity or decisions made
                     regarding your application. If you no longer wish to receive email notification, you may opt out
                     below.</p>
-                <div class="form-group">
+                <div class="form-group checkbox">
                     <div class="col">
-                        <input class="checkbox" type="checkbox" id="notify" name="notify">
-                        <label for="notify">Notify me of any activity or decision regarding my application</label>
+                        <label class="form__checkbox" for="notify"><input type="checkbox" id="notify"
+                                name="notify">Notify me
+                            of any activity or decision regarding my application</label>
                     </div>
                     <div class="col">
-                        <input class="checkbox" type="checkbox" id="doNotNotify" name="doNotNotify">
-                        <label for="notify">I <strong>DO NOT</strong> want to be notified of any activity or decision
+                        <label class="form__checkbox" for="doNotNotify"><input type="checkbox" id="doNotNotify"
+                                name="doNotNotify">I <strong>DO
+                                NOT</strong> want to be notified of any activity or
+                            decision
                             regarding my application</label>
                     </div>
                 </div>
@@ -136,26 +139,26 @@
         </form>
     </main>
     <footer class="footer">
-        <div class="container">
-            <div class="row">
+        <div class="container justify-content-between">
+            <div class="row justify-content-between">
                 <div class="col-lg-3 col-12">
                     <img src="./assets/img/Leland-Footer.png" alt="" class="footer__image" />
                 </div>
-                <div class="col-lg-3 col-6">
+                <div class="col-lg-3 col-6 footer__column">
                     <h3 class="footer__title">About</h3>
                     <ul class="footer__list">
                         <li class="footer__item"><a href="#">Leland Management</a></li>
                         <li class="footer__item"><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-6">
+                <div class="col-lg-3 col-6 footer__column">
                     <h3 class="footer__title">Need Help?</h3>
                     <ul class="footer__list">
                         <li class="footer__item"><a href="#">FAQ's</a></li>
                         <li class="footer__item"><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-12">
+                <div class="col-lg-3 col-12 footer__column">
                     <ul class="footer__list">
                         <li class="footer__item"><a href="#">Back to website</a></li>
                         <li class="footer__item"><a href="#">Logout</a></li>

@@ -19,7 +19,7 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  color: inherit;
+  color: inherit !important;
   text-decoration: none;
 }
 
@@ -59,7 +59,7 @@ input.form-control-lg:focus {
 .icon {
   color: #1f5d2c;
   font-size: 35px;
-  padding: 5px;
+  padding: 8px;
   transition: all 0.3s;
 }
 
@@ -70,12 +70,16 @@ input.form-control-lg:focus {
 .dropdown__icon {
   font-size: 30px;
   vertical-align: middle;
+  padding: 6px;
 }
 
 .footer {
   background-color: #2b2b2b;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
+}
+
+div.footer__column {
 }
 
 .footer__list {
@@ -152,6 +156,7 @@ header.container-fluid {
 main.container,
 div.container {
   padding: 38px;
+  max-width: 60rem;
 }
 
 @media (min-width: 768px) {
@@ -210,10 +215,6 @@ legend.form__notification {
 
 .profile__paragraph {
   padding-top: 3px;
-}
-
-.checkbox {
-  margin-top: 24px;
 }
 
 .footer__copyright {
@@ -275,5 +276,40 @@ div.alert {
 .dropdown-menu {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 5px;
   left: -145px !important;
-  padding: 10px 5px !important;
+  padding: 10px 0 !important;
+}
+
+.checkbox {
+  margin-top: 12px !important;
+}
+
+.form__checkbox {
+  margin-top: 15px;
+}
+
+[type='checkbox'] {
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  border: 0 !important;
+  outline: 0 !important;
+  margin-right: 15px;
+}
+
+.success input {
+  border-color: green;
+}
+
+.error input {
+  border-color: red;
+}
+
+.error small {
+  visibility: visible;
+}
+
+small {
+  color: red;
+  position: absolute;
+  visibility: hidden;
 }
