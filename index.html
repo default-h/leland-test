@@ -5,36 +5,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
+    <script src="./index.js" defer></script>
     <title>Profile | Leland Management</title>
-    <link rel="icon" type="image/x-icon" href="./assets/Leland-Icon.png" />
+    <link rel="icon" type="image/x-icon" href="./assets/icons/Leland-Icon.png" />
     <meta name="description"
         content="Leland Management has proudly served condominiums and HOAs in Florida since 1998. Trust in a community association management company that’s got your back." />
 </head>
 
 <body>
     <header class="container-fluid">
-        <nav class="navbar navbar-expand-xl navbar-light center">
+        <nav class="navbar navbar-expand-xl d-flex justify-content-between">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
                 aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a href="#" align="center">
+            <a class='logo' href="#" align="center">
                 <img src="./assets/img/Leland-Header.png" width="110" alt="Leland management lifestyle" />
             </a>
-            <div>
-                <i class="bi bi-bell-fill icon"></i>
-
-                <i class="bi bi-person-circle icon"></i>
+            <div class="d-flex flex-row icons">
+                <div>
+                    <i class=" bi bi-bell-fill icon"></i>
+                </div>
+                <div class="dropdown">
+                    <button class="navbar__dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-circle icon"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="d-flex justify-content-center"><a class="dropdown-item" href="#"><i
+                                    class="bi bi-person dropdown__icon"></i>
+                                Profile</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right dropdown__icon"></i> Back
+                                to
+                                website</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-power dropdown__icon"></i>
+                                Logout</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="collapse navbar-collapse" id="toggleMobileMenu">
-                <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse links" id="toggleMobileMenu">
+                <ul class="navbar-nav">
                     <li>
                         <a class="nav-link" href="#">Dashboard</a>
                     </li>
@@ -46,11 +63,11 @@
                     </li>
                 </ul>
             </div>
-
         </nav>
     </header>
     <main class="container">
         <h2 class="form__title">Profile</h2>
+        <span class="error-message" id="error">hi</span>
         <div class="row">
             <div class="col-lg-6">
                 <legend class="profile__header">Account Name</legend>
@@ -62,22 +79,20 @@
                 </address>
             </div>
         </div>
-
-
-
-        <form>
+        <form id="form">
             <div class="row">
                 <legend class="form__display">Display Name</legend>
                 <div class="col-lg-6">
                     <div class="form-group">
                         <label class="form__label" for="firstName">First Name</label>
-                        <input type="text" class="form-control form-control-lg" id="firstName" name="firstName">
+                        <input type="text" class="form-control form-control-lg" id="firstName" name="firstName"
+                            required>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="form-group">
                         <label class="form__label" for="lastName">Last Name</label>
-                        <input type="text" class="form-control form-control-lg" id="lastName" name="lastName">
+                        <input type="text" class="form-control form-control-lg" id="lastName" name="lastName" required>
                     </div>
                 </div>
             </div>
@@ -87,12 +102,14 @@
                     <div class="form-group">
                         <label class="form__label" for="emailAddress">Email Address</label>
                         <input type="email" class="form-control form-control-lg" id="emailAddress" name="emailAddress">
+
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="form-group">
                         <label class="form__label" for="phoneNumber">Phone Number</label>
                         <input type="tel" class="form-control form-control-lg" id="phoneNumber" name="phoneNumber">
+
                     </div>
                 </div>
             </div>
@@ -121,31 +138,31 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-12">
+                <div class="col-lg-3 col-12">
                     <img src="./assets/img/Leland-Footer.png" alt="" class="footer__image" />
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-6">
                     <h3 class="footer__title">About</h3>
                     <ul class="footer__list">
                         <li class="footer__item"><a href="#">Leland Management</a></li>
                         <li class="footer__item"><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-6">
                     <h3 class="footer__title">Need Help?</h3>
                     <ul class="footer__list">
                         <li class="footer__item"><a href="#">FAQ's</a></li>
                         <li class="footer__item"><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-12">
+                <div class="col-lg-3 col-12">
                     <ul class="footer__list">
                         <li class="footer__item"><a href="#">Back to website</a></li>
                         <li class="footer__item"><a href="#">Logout</a></li>
                     </ul>
                 </div>
                 <div>
-                    <p class="footer__copyright"><i class="bi bi-c-circle"></i> 2022 Leland Management ARB</p>
+                    <p class="footer__copyright"><span>&copy;</span> 2022 Leland Management ARB</p>
                 </div>
             </div>
         </div>
