@@ -27,19 +27,17 @@ input.form-control-lg {
   border: 1px solid #dde0e3;
   border-radius: 0;
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   min-width: none;
   min-height: none;
   margin-top: 12px;
   height: 45px;
   min-height: unset;
+  width: 98%;
 }
 
 input.form-control-lg:focus {
   box-shadow: none;
-}
-
-.form-group {
 }
 
 .form__title {
@@ -67,15 +65,21 @@ input.form-control-lg:focus {
 .footer__title {
   font-size: 15px;
   font-weight: 700;
+  margin-bottom: 0;
 }
 
 .footer__item {
-  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 .footer__image {
   max-width: 145px;
   width: 100%;
+}
+
+.col-sm-3 {
+  border: 1px solid red;
 }
 
 .btn.btn-default,
@@ -112,17 +116,6 @@ header.container-fluid {
   padding: 7px 34px;
 }
 
-input.form-control {
-}
-
-ul.navbar-nav {
-  border: 2px solid red;
-}
-
-.navbar-brand {
-  border: 2px solid red;
-}
-
 .navbar.center .navbar-inner {
   text-align: center;
 }
@@ -134,8 +127,18 @@ ul.navbar-nav {
 
 main.container,
 div.container {
-  width: 68%;
   padding: 38px;
+}
+
+.row {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  main.container,
+  div.container {
+    width: 68%;
+  }
 }
 
 legend.form__contact,
@@ -184,4 +187,10 @@ legend.form__notification {
 
 .checkbox {
   margin-top: 24px;
+}
+
+.footer__copyright {
+  margin-top: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
