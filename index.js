@@ -13,7 +13,7 @@ form.addEventListener('submit', e => {
   validateInput();
 });
 
-function validateInput() {
+const validateInput = () => {
   const emailValue = emailAddress.value.trim();
   const phoneValue = phoneNumber.value.trim();
 
@@ -32,24 +32,24 @@ function validateInput() {
   } else {
     validated(phoneNumber);
   }
-}
+};
 
-function errorMessage(input, err) {
+const errorMessage = (input, err) => {
   const formControl = input.parentElement;
   const small = formControl.querySelector('small');
   formControl.className = 'form-group error';
   small.innerText = err;
-}
+};
 
-function validated(input) {
+const validated = input => {
   const formControl = input.parentElement;
   formControl.className = 'success';
-}
+};
 
-function validEmail(emailAddress) {
+const validEmail = emailAddress => {
   return EMAIL_REGEX.test(emailAddress);
-}
+};
 
-function validPhone(phoneNumber) {
+const validPhone = phoneNumber => {
   return PHONE_REGEX.test(phoneNumber);
-}
+};
