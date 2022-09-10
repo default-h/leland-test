@@ -28,6 +28,11 @@ a:active {
   border: 0;
 }
 
+.dropdown-item {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
 .navbar {
   margin-left: auto;
   margin-right: auto;
@@ -68,9 +73,9 @@ input.form-control-lg:focus {
 }
 
 .dropdown__icon {
-  font-size: 30px;
+  font-size: 26px;
   vertical-align: middle;
-  padding: 6px;
+  margin-right: 10px;
 }
 
 .footer {
@@ -139,7 +144,7 @@ button.navbar-toggler:active {
 
 header.container-fluid {
   border-bottom: 1px solid #dde0e3;
-  padding: 7px 10px;
+  padding: 5px 10px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -159,20 +164,6 @@ div.container {
   max-width: 60rem;
 }
 
-@media (min-width: 768px) {
-  main.container,
-  div.container {
-    width: 68%;
-  }
-}
-
-@media (min-width: 1200px) {
-  header.container-fluid {
-    border-bottom: 1px solid #dde0e3;
-    padding: 7px 34px;
-  }
-}
-
 legend.form__contact,
 legend.form__display,
 legend.form__notification {
@@ -182,7 +173,7 @@ legend.form__notification {
 }
 
 legend.form__display {
-  margin-top: 12px;
+  margin-top: 27px;
 }
 
 legend.form__contact {
@@ -238,6 +229,7 @@ div.alert {
 
 .form-group {
   position: relative;
+  margin-top: 30px;
 }
 
 .error-message {
@@ -259,24 +251,14 @@ div.alert {
   box-shadow: none !important;
 }
 
-@media (min-width: 1200px) {
-  .icons {
-    order: 2;
-  }
-
-  .links {
-    order: 1;
-  }
-}
-
 .navbar-nav {
   gap: 40px;
 }
 
 .dropdown-menu {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 5px;
-  left: -145px !important;
-  padding: 10px 0 !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 3px;
+  left: -138px !important;
+  padding: 8px 6px !important;
 }
 
 .checkbox {
@@ -293,7 +275,7 @@ div.alert {
   height: 24px;
   border: 0 !important;
   outline: 0 !important;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .success input {
@@ -312,4 +294,35 @@ small {
   color: red;
   position: absolute;
   visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  main.container,
+  div.container {
+    width: 68%;
+  }
+}
+
+@media (min-width: 992px) {
+  .form-group {
+    margin-top: 0;
+  }
+  legend.form__display {
+    margin-top: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.container-fluid {
+    border-bottom: 1px solid #dde0e3;
+    padding: 5px 34px;
+  }
+
+  .icons {
+    order: 2;
+  }
+
+  .links {
+    order: 1;
+  }
 }

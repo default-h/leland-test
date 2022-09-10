@@ -37,7 +37,7 @@ function validateInput() {
 function errorMessage(input, err) {
   const formControl = input.parentElement;
   const small = formControl.querySelector('small');
-  formControl.className = 'error';
+  formControl.className = 'form-group error';
   small.innerText = err;
 }
 
